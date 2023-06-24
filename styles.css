@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+:root{
+    --Verydarkblue: hsl(233, 47%, 7%);
+    --Darkdesaturatedblue: hsl(244, 38%, 16%);
+    --Soft: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightlytransparentwhitemainparagraph: hsla(0, 0%, 100%, 0.75);
+    --Slightlytransparentwhitestatheadings: hsla(0, 0%, 100%, 0.6);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height:100vh;
+    background: var(--Verydarkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background: white;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+}
+
+.box1{
+    background: var(--Darkdesaturatedblue);
+    width: 50%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 5%;
+    row-gap: 40%;
+}
+
+.box-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    
+}
+
+.bt1{
+    color: var(--White);
+    font-size: larger;
+    font-weight: 800;
+    text-align: left;
+}
+
+.a1{
+    color: var(--Soft);
+    font-size:large;
+    font-weight: 800;
+}
+
+.bt2{
+    color: var(--Slightlytransparentwhitemainparagraph);;
+    text-align: left;
+}
+
+
+.bt3-main{
+   
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding: 3rem 0;
+    column-gap: 15%;
+}
+
+.bt3-1-1{
+    text-align: left;
+    color: var(--White);
+    font-weight: 800;
+    font-size: large;
+}
+
+.bt3-2-1{
+    text-align: left;
+    color: var(--White);
+    font-weight: 800;
+    font-size: large;
+}
+
+.bt3-3-1{
+    text-align: left;
+    color: var(--White);
+    font-weight: 800;
+    font-size: large;
+}
+
+
+.bt3-1-2{
+    text-transform: uppercase;
+    color:var(--Slightlytransparentwhitestatheadings);;
+    font-size: xx-small;
+    font-weight: 1;
+}
+
+.bt3-2-2{
+    text-transform: uppercase;
+    color: var(--Slightlytransparentwhitestatheadings);
+    font-size: xx-small;
+    font-weight: 1;
+}
+
+.bt3-3-2{
+    text-transform: uppercase;
+    color: var(--Slightlytransparentwhitestatheadings);;
+    font-size: xx-small;
+    font-weight: 1;
+}
+
+
+.box2{
+    display: flex;
+    position: relative;
+    background: url(./images/image-header-desktop.jpg);
+    width: 50%;
+    border: hidden;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    /*IMAGEM FULL*/
+    background-position: center center;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.img1{
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background:  hsla(279, 39%, 39%,70%);
+    
+        
+
+}
+
+/*RESPONSIVE*/
+
+@media(max-width:376px){
+    
+    main{
+        display: flex;
+        flex-direction: column-reverse; 
+        width: 300px;
+        height: 550px;
+        margin: 15%;   
+    }
+
+    .box1{
+        display: flex;
+        width: 100%;
+        border-top-left-radius: 0;
+        
+    }
+
+    .bt1{
+        text-align: center;
+    }
+
+    .bt2{
+        text-align: center;
+    }
+
+    .bt3-main{
+        flex-direction: column;
+        row-gap: 15%;
+    }
+    
+    .bt3-1-1{
+        text-align: center;
+    }
+
+    .bt3-2-1{
+        text-align: center;
+    }
+
+    .bt3-3-1{
+        text-align: center;
+    }
+
+    .box2{
+        background: url(./images/image-header-mobile.jpg);
+        display: flex;
+        flex-direction: column; 
+        width: 300px;
+        height: 180px;
+        display: flex;
+        position: relative;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 1rem;
+        background-position: center center;
+        background-size: cover;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+       
+       
+    }
+
+    .img1{
+       
+        display: flex;
+        flex-direction: row;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 1rem;
+    }
+
+    
+ }
+
